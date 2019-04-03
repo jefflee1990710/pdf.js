@@ -1009,6 +1009,27 @@
        "link": false,
        "type": "eq"
     },
+    {  "id": "bug1245391",
+       "file": "pdfs/bug1245391_reduced.pdf",
+       "md5": "6c946045ee0f2f663f269717c0f1614a",
+       "rounds": 1,
+       "link": false,
+       "type": "eq"
+    },
+    {  "id": "bug1245391-text",
+       "file": "pdfs/bug1245391_reduced.pdf",
+       "md5": "6c946045ee0f2f663f269717c0f1614a",
+       "rounds": 1,
+       "link": false,
+       "type": "text"
+    },
+    {  "id": "bug1513120-text",
+       "file": "pdfs/bug1513120_reduced.pdf",
+       "md5": "e88ad8b5bb385296f475ca51ce0d216d",
+       "rounds": 1,
+       "link": false,
+       "type": "text"
+    },
     {  "id": "bug1250079",
        "file": "pdfs/bug1250079.pdf",
        "md5": "a1dd21a70ae7097d96273e85a80b26ef",
@@ -1457,6 +1478,14 @@
        "rounds": 1,
        "link": false,
        "type": "text"
+    },
+    {  "id": "issue10614",
+       "file": "pdfs/issue10614.pdf",
+       "md5": "c41da60ce9af100cb78e1c2a6ba18232",
+       "rounds": 1,
+       "link": true,
+       "lastPage": 1,
+       "type": "eq"
     },
     {  "id": "issue6071",
        "file": "pdfs/issue6071.pdf",
@@ -2535,6 +2564,13 @@
        "link": false,
        "type": "eq"
     },
+    {  "id": "issue10665",
+       "file": "pdfs/issue10665_reduced.pdf",
+       "md5": "4c8938c808153f6b3840e8a5eb68b804",
+       "rounds": 1,
+       "link": false,
+       "type": "eq"
+    },
     {  "id": "issue1466",
       "file": "pdfs/issue1466.pdf",
       "md5": "8a8877432e5bb10cfd50d60488d947bb",
@@ -2687,6 +2723,12 @@
        "lastPage": 7,
        "rounds": 1,
        "link": true,
+       "type": "eq"
+    },
+    {  "id": "issue9534_reduced",
+       "file": "pdfs/issue9534_reduced.pdf",
+       "md5": "f9a47805555de5bc0f9f5f5188df6bad",
+       "rounds": 1,
        "type": "eq"
     },
     {  "id": "issue1233",
@@ -2963,6 +3005,22 @@
     {  "id": "issue6113",
        "file": "pdfs/issue6113.pdf",
        "md5": "365fa2d369c51ee3ff195dae907b6e25",
+       "rounds": 1,
+       "link": false,
+       "type": "eq"
+    },
+    {
+       "id": "tiling-pattern-box",
+       "file": "pdfs/tiling-pattern-box.pdf",
+       "md5": "09100872824fc14012bd8f9bf4dbc632",
+       "rounds": 1,
+       "link": false,
+       "type": "eq"
+    },
+    {
+       "id": "tiling-pattern-large-steps",
+       "file": "pdfs/tiling-pattern-large-steps.pdf",
+       "md5": "569aac1303c97004aab6a720d9b259b4",
        "rounds": 1,
        "link": false,
        "type": "eq"
