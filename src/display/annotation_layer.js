@@ -52,7 +52,7 @@ class AnnotationElementFactory {
 
       case AnnotationType.WIDGET:
         let fieldType = parameters.data.fieldType;
-
+        console.log('Rendering widget', fieldType);
         switch (fieldType) {
           case 'Tx':
             return new TextWidgetAnnotationElement(parameters);
@@ -65,6 +65,8 @@ class AnnotationElementFactory {
             return new PushButtonWidgetAnnotationElement(parameters);
           case 'Ch':
             return new ChoiceWidgetAnnotationElement(parameters);
+          case 'Sig':
+            return new SigWidgetAnnotationElement(parameters);
         }
         return new WidgetAnnotationElement(parameters);
 
@@ -390,6 +392,25 @@ class WidgetAnnotationElement extends AnnotationElement {
    */
   render() {
     // Show only the container for unsupported field types.
+    return this.container;
+  }
+}
+
+class SigWidgetAnnotationElement extends WidgetAnnotationElement {
+  constructor(parameters) {
+    let isRenderable = parameters.renderInteractiveForms ||
+      (!parameters.data.hasAppearance && !!parameters.data.fieldValue);
+    super(parameters, isRenderable);
+  }
+
+  render() {
+    this.container.className = 'signWidgetAnnotation';
+    let element = document.createElement('button');
+    element.style.width = '100%';
+    element.style.height = '100%';
+    element.type = 'button';
+    element.innerHTML = 'Click to sign';
+    this.container.appendChild(element);
     return this.container;
   }
 }
